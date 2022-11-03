@@ -551,3 +551,19 @@ Resume
   background-color: #ede4e4;
   height: 100%;
 }
+
+.right-content {
+  padding: 2rem 3rem;
+}
+
+.about {
+  font-size: 2rem;
+  color: blue;
+  padding: 1.2rem 0;
+  text-transform: uppercase;
+}
+
+.lorem {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
