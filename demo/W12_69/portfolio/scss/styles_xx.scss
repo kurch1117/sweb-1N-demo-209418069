@@ -44,7 +44,16 @@ Navbar
             display: flex;
             //justify-content: space-around;
             gap: 1.5rem;
+            position: absolute;
             right: 3rem;
+
+            li a {
+                color: var(--clr-primary-5);
+            }
+        }
+
+        .nav-btn {
+            display: none;
         }
     }
 }
