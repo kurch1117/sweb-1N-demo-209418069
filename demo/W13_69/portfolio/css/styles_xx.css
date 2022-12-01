@@ -112,7 +112,7 @@ p {
   color: var(--clr-grey-5);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   h1 {
     font-size: 4rem;
   }
@@ -188,10 +188,10 @@ h4 {
 .social-icon {
   font-size: 1.5rem;
   color: var(--clr-grey-5);
-  transition: var(--transition);
+  transform: var(--transition);
 }
 .social-icon:hover {
-  color: var(--clr-grey-5);
+  color: var(--clr-primary-5);
 }
 
 @media screen and (min-width: 992px) {
@@ -214,6 +214,7 @@ Navbar
 .nav-center {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   position: relative;
   margin: 0 auto;
@@ -224,8 +225,8 @@ Navbar
 .nav-btn {
   position: absolute;
   right: 1.5rem;
-  font-size: 2rem;
   border-color: transparent;
+  font-size: 2rem;
   background-color: transparent;
   color: var(--clr-primary-5);
   cursor: pointer;
@@ -242,23 +243,23 @@ Navbar
 }
 
 @media screen and (min-width: 768px) {
-  .nav .nav-links {
+  .nav-links {
     display: flex;
     gap: 1.5rem;
+    right: 4rem;
     position: absolute;
-    right: 3rem;
   }
-  .nav .nav-links li a {
+  .nav-links li a {
     color: var(--clr-grey-5);
   }
-  .nav .nav-btn {
+  .nav-btn {
     display: none;
   }
 }
 /*
-=============== 
-Sidebar
-===============
+==========
+sidebar
+==========
 */
 .sidebar {
   position: fixed;
@@ -266,13 +267,13 @@ Sidebar
   top: 0;
   width: 100%;
   height: 100%;
-  display: grid;
-  justify-content: center;
-  align-items: center;
   background-color: var(--clr-grey-10);
   z-index: 5;
   transition: var(--transition);
-  transform: translate(-100%);
+  transform: translateX(-100%);
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 .sidebar .close-btn {
   position: absolute;
@@ -289,7 +290,6 @@ Sidebar
 }
 .sidebar-links {
   text-align: center;
-  line-height: 4rem;
 }
 .sidebar-links a {
   font-size: 2rem;
@@ -302,14 +302,14 @@ Sidebar
 }
 .sidebar .social-icons {
   display: grid;
+  justify-items: center;
   margin-top: 3rem;
   width: 20rem;
   grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
 }
 .sidebar .social-icon {
-  font-size: 1.5rem;
   color: var(--clr-grey-5);
+  font-size: 1.5rem;
   transition: var(--transition);
 }
 .sidebar .social-icon:hover {
@@ -321,9 +321,9 @@ Sidebar
 }
 
 /*
-=============== 
+==========
 Hero
-===============
+==========
 */
 .hero {
   background-color: var(--clr-primary-10);
@@ -344,7 +344,7 @@ Hero
   justify-content: start;
 }
 .hero-btn {
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
 }
 .hero-img {
   display: none;
@@ -371,6 +371,54 @@ Hero
     position: absolute;
     top: 2rem;
     right: -2rem;
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid var(--clr-primary-5);
+    border-radius: var(--radius);
+  }
+}
+/*
+========
+about
+========
+*/
+.about {
+  background-color: white;
+}
+.about-center {
+  min-height: calc(100vh - 4rem);
+  display: grid;
+  place-items: center;
+}
+.about .underline {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+.about-btn {
+  margin-top: 1.5rem;
+}
+.about-photo {
+  max-width: 25rem;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: var(--radius);
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .about-center {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-img {
+    display: block;
+    width: 70%;
+    position: relative;
+  }
+  .about-img::before {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
     width: 100%;
     height: 100%;
     border: 0.25rem solid var(--clr-primary-5);
