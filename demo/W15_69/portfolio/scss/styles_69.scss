@@ -414,7 +414,7 @@ Services
     }
   }
 
-  /*
+/*
 =============== 
 connect
 ===============
@@ -466,5 +466,87 @@ connect
     .video-text {
         width: 30rem;
         margin-top: 2rem;
+    }
+}
+
+/*
+=============== 
+connect
+===============
+*/
+
+@media screen and (min-width: 768px) {
+    .skills-center {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.skills {
+    background: var(--clr-primary-9);
+
+    &-center {
+        width: 80vw;
+        display: grid;
+        column-gap: 3rem;
+    }
+
+    h3 {
+        margin: 1.5rem 0;
+        color: var(--clr-primary-1);
+    }
+}
+
+.skill {
+    margin-bottom: 1.25rem;
+    p {
+        margin-bottom: 0.5rem;
+        text-transform: capitalize;
+        color: var(--clr-primary-1);
+    }
+
+    &-container {
+        background-color: var(--clr-white);
+        height: 1rem;
+        width: 100%;
+        border-radius: var(--radius);
+        position: relative;
+    }
+
+    &-value {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--clr-primary-5);
+        height: 100%;
+        width: 50%;
+        border-radius: var(--radius);
+    }
+
+    &-text {
+        position: absolute;
+        top: -2rem;
+        left: calc(50% - 1rem);
+
+        &-80 {
+            left: calc(80% - 1rem);
+        }
+        &-70 {
+            left: calc(70% - 1rem);
+        }
+        &-60 {
+            left: calc(60% - 1rem);
+        }
+    }
+
+    .value {
+        &-80 {
+            width: 80%;
+        }
+        &-70 {
+            width: 70%;
+        }
+        &-60 {
+            width: 60%;
+        }
     }
 }
