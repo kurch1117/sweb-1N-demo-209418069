@@ -440,6 +440,7 @@ connect
         object-fit: cover;
         background-color: white;
         opacity: 0.7;
+        z-index: -3;
     }
 
     .video-container {
