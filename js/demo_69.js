@@ -19,6 +19,18 @@ function change (index) {
             break;
         case 6:
             p.innerHTML = `<iframe src="./demo/W09_69/resume_69.html" width="100%" height="100%" />`
-            break;        
+            break;
+        case 7:
+            p.innerHTML = `<iframe src="./demo/w12_69/portfolio/index.html" width="100%" height="100%" />`
+            break;
+        case 8:
+            p.innerHTML = `<iframe src="./demo/w13_69/portfolio/index.html" width="100%" height="100%" />`
+            break;
+        case 9:
+            p.innerHTML = `<iframe src="./demo/w14_69/portfolio/index.html" width="100%" height="100%" />`
+            break; 
+        case 10:
+            p.innerHTML = `<iframe src="./demo/w15_69/portfolio/index.html" width="100%" height="100%" />`
+            break;                        
     }
 }
