@@ -310,7 +310,7 @@ projects
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 676px) {
     .projects {
         &-center {
             display: grid;
@@ -368,6 +368,7 @@ projects
 Services
 ===============
 */
+
 /* bg-grey in globals */
 .services-center {
     .service {
@@ -700,19 +701,110 @@ Blogs
         &-center {
             grid-template-columns: repeat(2, 1fr);
     }
-}
+  }
 }
 
 @media screen and (min-width: 768px){
     .blogs {
         &-center {grid-template-columns: repeat(3, 1fr);
     }
-}
+  }
 }
 
 @media screen and (min-width: 992px){
     .blogs {
         &-center {grid-template-columns: repeat(4, 1fr);
     }
+  }
 }
+
+/*
+=============== 
+footer
+===============
+*/
+
+.footer {
+    background-color: #222;
+    padding-bottom: 1rem;
+    display: grid;
+    place-items: center;
+
+    .social-icons {
+        padding-bottom: 1rem;
+    }
+
+    .social-icon {
+        color: var(--clr-primary-5);
+
+        &:hover {
+            color: var(--clr-primary-10);
+        }
+    }
+
+    p {
+        font-size: 1.25rem;
+        text-transform: capitalize;
+    }
 }
+/*
+=============
+tiles
+=============
+*/
+
+.tiles {
+    padding: 4rem 0;
+
+    &-center {
+        width: 90vw;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 12.5rem);
+        gap: 1rem;
+        grid-template-areas: 
+          'a a a b'
+          'a a a c'
+          'd f f f'
+          'e f f f'
+          'e g h i'
+        ;
+      }
+      
+      &-center img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .tile-8 {
+        grid-area: a;
+      }
+      .tile-2{
+        grid-area: b;
+      }
+      .tile-3{
+        grid-area: c;
+      }
+      .tile-6{
+        grid-area: f;
+      }
+      .tile-7{
+        grid-area: h;
+      }
+      .tile-5{
+        grid-area: e;
+      }
+      .tile-4{
+        grid-area: d;
+      }
+      .tile-1{
+        grid-area: g;
+      }
+      .tile-9{
+        grid-area: i;
+      }
+  }
