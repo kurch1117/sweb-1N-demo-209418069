@@ -1,6 +1,8 @@
-###自主學習:對自製logo加入兩層不同色陰影。
+### Github repo ur1
+[Github repo](https://github.com/kurch1117/sweb-1N-demo-209418069)
+### 自主學習:對自製logo加入兩層不同色陰影。
 ![](kurch.png)
-###學習心得:在這堂課過後對於之前不熟悉的CSS有了一定的了解。
+### 學習心得:在這堂課過後對於之前不熟悉的CSS有了一定的了解。
 ![](log1.png)
 ![](log2.png)
 ![](log3.png)
